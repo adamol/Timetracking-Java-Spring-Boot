@@ -33,7 +33,6 @@ public class TimeEntryController {
 	@PostMapping("/")
 	@ResponseBody
 	public TimeEntry store(@RequestBody TimeEntry timeEntry) {
-		
 		repository.save(timeEntry);
 		
 		return timeEntry;
